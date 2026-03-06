@@ -1,14 +1,42 @@
-const zoom = document.querySelectorAll(".zoom");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
+// CARRUSEL
 
-zoom.forEach(img=>{
-img.onclick=()=>{
-lightbox.style.display="flex";
-lightboxImg.src=img.src;
-}
+const track = document.querySelector(".carousel-track")
+const next = document.querySelector(".next")
+const prev = document.querySelector(".prev")
+
+let scrollAmount = 0
+
+next.addEventListener("click",()=>{
+scrollAmount += 400
+track.scrollTo({
+left:scrollAmount,
+behavior:"smooth"
+})
 })
 
-lightbox.onclick=()=>{
-lightbox.style.display="none";
+prev.addEventListener("click",()=>{
+scrollAmount -= 400
+track.scrollTo({
+left:scrollAmount,
+behavior:"smooth"
+})
+})
+
+
+// ZOOM IMAGEN
+
+const modal = document.getElementById("zoomModal")
+const modalImg = document.getElementById("zoomImg")
+
+document.querySelectorAll("img").forEach(img=>{
+
+img.onclick = function(){
+modal.style.display="block"
+modalImg.src=this.src
+}
+
+})
+
+document.querySelector(".cerrar").onclick=function(){
+modal.style.display="none"
 }
