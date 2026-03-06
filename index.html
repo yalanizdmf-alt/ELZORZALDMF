@@ -8,422 +8,159 @@
 
 <title>EL ZORZAL</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Forum&family=Antic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-html{scroll-behavior:smooth;}
-
-body{
-margin:0;
-font-family:'Antic',sans-serif;
-background:#f2ede6;
-color:#000;
-}
-
-h1,h2{
-font-family:'Forum';
-letter-spacing:2px;
-}
-
-section{
-padding:70px 10%;
-}
-
-.titulo{
-font-size:18px;
-margin-bottom:20px;
-}
-
-.texto{
-text-align:justify;
-line-height:1.35;
-}
-
-/* MENU */
-
-nav{
-position:sticky;
-top:0;
-background:#6a5645;
-display:flex;
-justify-content:center;
-z-index:1000;
-}
-
-nav a{
-padding:15px 25px;
-color:white;
-text-decoration:none;
-font-family:'Forum';
-font-size:15px;
-transition:0.3s;
-}
-
-nav a:hover{
-background:#8c7763;
-}
-
-/* PORTADA */
-
-.portada{
-height:90vh;
-background:url("render-portada.jpg") center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-position:relative;
-}
-
-.portada::after{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.55);
-}
-
-.portada h1{
-position:relative;
-color:white;
-font-size:60px;
-}
-
-/* IMAGENES */
-
-.img-full{
-width:100%;
-margin-top:25px;
-cursor:pointer;
-}
-
-/* GALERIA */
-
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.galeria img{
-width:100%;
-cursor:pointer;
-transition:0.4s;
-}
-
-.galeria img:hover{
-transform:scale(1.05);
-}
-
-/* CARRUSEL */
-
-.carrusel{
-position:relative;
-}
-
-.carrusel img{
-width:100%;
-}
-
-.flecha{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-font-size:40px;
-color:white;
-background:rgba(0,0,0,0.4);
-padding:10px;
-cursor:pointer;
-}
-
-.izq{left:10px;}
-.der{right:10px;}
-
-/* ZOOM */
-
-.zoom{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.9);
-display:none;
-align-items:center;
-justify-content:center;
-z-index:2000;
-}
-
-.zoom img{
-max-width:90%;
-max-height:90%;
-}
-
-.cerrar{
-position:absolute;
-top:25px;
-right:40px;
-font-size:40px;
-color:white;
-cursor:pointer;
-}
-
-/* CONTACTO */
-
-.contacto{
-display:flex;
-gap:40px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.logo{
-height:50px;
-}
-
-.boton{
-background:#6a5645;
-color:white;
-padding:12px 22px;
-text-decoration:none;
-display:inline-block;
-margin-top:20px;
-}
-
-iframe{
-width:100%;
-height:400px;
-border:none;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-font-size:24px;
-padding:15px 18px;
-border-radius:50%;
-text-decoration:none;
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
 </head>
 
+
 <body>
 
-<!-- PORTADA -->
 
-<div class="portada">
-<h1>EL ZORZAL</h1>
-</div>
+<header>
 
-<!-- MENU -->
-
-<nav>
+<nav class="menu">
 
 <a href="#proyecto">EL PROYECTO</a>
 <a href="#ubicacion">UBICACIÓN</a>
 <a href="#conjunto">CONJUNTO</a>
 <a href="#prototipos">PROTOTIPOS</a>
-<a href="#galeria">GALERIA</a>
-<a href="#avances">AVANCES</a>
+<a href="#galeria">GALERÍA</a>
+<a href="#avances">AVANCES DE OBRA</a>
 <a href="#contacto">CONTACTO</a>
 
 </nav>
 
-<!-- PROYECTO -->
+</header>
+
+
+<section class="portada">
+
+<img src="galeria/render-1.jpg">
+
+<div class="overlay"></div>
+
+<h1>EL ZORZAL</h1>
+
+</section>
+
+
 
 <section id="proyecto">
 
-<h2 class="titulo">EL PROYECTO</h2>
+<h2>EL PROYECTO</h2>
 
 <p class="texto">
 
 EL ZORZAL es un desarrollo residencial moderno ubicado en Santa Lucía, dentro del área metropolitana de San Juan.
 
-El proyecto se emplaza en una zona urbana consolidada, caracterizada por su excelente conectividad y proximidad a los principales puntos de la ciudad.
+El proyecto se emplaza en una zona urbana consolidada, caracterizada por su excelente conectividad y proximidad a los principales puntos de la ciudad. Su estratégica localización permite un acceso rápido al área céntrica, espacios comerciales, instituciones educativas y a las principales arterias viales que estructuran la movilidad urbana.
 
-Con una estética cálida y contemporánea, el proyecto ofrece unidades en dos tipologías: monoambiente y un dormitorio.
+Con una estética cálida y contemporánea, el proyecto ofrece unidades en dos tipologías -monoambiente y un dormitorio diseñadas para maximizar funcionalidad, confort y luminosidad.
 
-El desarrollo está a cargo de DMF CONSTRUCCIONES SRL, empresa familiar con más de 40 años de trayectoria.
+El desarrollo está a cargo de DMF CONSTRUCCIONES SRL, una empresa familiar con más de 40 años de trayectoria en el sector de la construcción, reconocida por su compromiso con la calidad constructiva y la correcta planificación de cada proyecto.
+
+EL ZORZAL se presenta así como una alternativa sólida tanto para vivienda propia como para inversión, combinando una ubicación estratégica, diseño contemporáneo y un respaldo profesional que garantiza seguridad y valor a largo plazo.
 
 </p>
 
-<img class="img-full" src="EL PROYECTO/render-exonometria.jpg">
+<img class="fullimg zoom" src="el-proyecto/render-exonometria.jpg">
 
 </section>
 
-<!-- UBICACION -->
+
 
 <section id="ubicacion">
 
-<h2 class="titulo">UBICACIÓN</h2>
+<h2>UBICACIÓN</h2>
 
-<img class="img-full" src="UBICACIÓN/mapa-1.jpg">
+<p>Hipólito Yrigoyen Este & Zorzal</p>
 
-<iframe src="https://www.google.com/maps?q=Hipólito+Yrigoyen+Este+Zorzal+San+Juan&output=embed"></iframe>
+<a class="boton" href="https://maps.app.goo.gl/QPntd3Agr1XSM1eCA" target="_blank">
+VER EN GOOGLE MAPS
+</a>
+
+<img class="fullimg zoom" src="ubicacion/mapa-1.jpg">
 
 </section>
 
-<!-- CONJUNTO -->
+
 
 <section id="conjunto">
 
-<h2 class="titulo">CONJUNTO</h2>
+<h2>CONJUNTO</h2>
+
+<p class="texto">
+
+El proyecto se implanta sobre un terreno de configuración triangular, cuya particular geometría dio origen a una propuesta arquitectónica cuidadosamente estudiada. A partir de esta condición, se priorizó la orientación de las unidades residenciales con el objetivo de favorecer la ventilación cruzada y optimizar el ingreso de iluminación natural en los espacios interiores.
+
+Con una arquitectura de líneas contemporáneas y una estética cálida, EL ZORZAL se concibe como un conjunto residencial compuesto por 18 unidades habitacionales, organizadas en dos tipologías: monoambientes y departamentos de un dormitorio.
+
+Cada vivienda fue proyectada atendiendo especialmente a la eficiencia espacial, el confort cotidiano y la calidad ambiental.
+
+</p>
 
 <div class="galeria">
 
-<img src="CONJUNTO/planta-baja.jpg">
-<img src="CONJUNTO/planta-alta.jpg">
-<img src="CONJUNTO/fachada-principal.jpg">
+<img class="zoom" src="conjunto/planta-baja.jpg">
+<img class="zoom" src="conjunto/planta-alta.jpg">
+<img class="zoom" src="conjunto/fachada-principal.jpg">
 
 </div>
 
 </section>
 
-<!-- PROTOTIPOS -->
 
-<section id="prototipos">
-
-<h2 class="titulo">PROTOTIPOS</h2>
-
-<h3>UNA HABITACIÓN</h3>
-
-<img class="img-full" src="PROTOTIPOS/habitacion-axo.jpg">
-
-<div class="galeria">
-
-<img src="PROTOTIPOS/habitacion-1.jpg">
-<img src="PROTOTIPOS/habitacion-2.jpg">
-<img src="PROTOTIPOS/habitacion-3.jpg">
-<img src="PROTOTIPOS/habitacion-4.jpg">
-<img src="PROTOTIPOS/habitacion-5.jpg">
-
-</div>
-
-<h3>MONOAMBIENTE</h3>
-
-<img class="img-full" src="PROTOTIPOS/monoambiente-axo.jpg">
-
-<div class="galeria">
-
-<img src="PROTOTIPOS/monoambiente-1.jpg">
-<img src="PROTOTIPOS/monoambiente-2.jpg">
-<img src="PROTOTIPOS/monoambiente-3.jpg">
-<img src="PROTOTIPOS/monoambiente-4.jpg">
-<img src="PROTOTIPOS/monoambiente-5.jpg">
-
-</div>
-
-</section>
-
-<!-- GALERIA -->
 
 <section id="galeria">
 
-<h2 class="titulo">GALERIA</h2>
+<h2>GALERÍA</h2>
 
 <div class="galeria">
 
-<img src="GALERIA/render-1.jpg">
-<img src="GALERIA/render-2.jpg">
-<img src="GALERIA/render-3.jpg">
-<img src="GALERIA/render-4.jpg">
-<img src="GALERIA/render-5.jpg">
-<img src="GALERIA/render-6.jpg">
-<img src="GALERIA/render-7.jpg">
-<img src="GALERIA/render-8.jpg">
-<img src="GALERIA/render-9.jpg">
-<img src="GALERIA/render-10.jpg">
+<img class="zoom" src="galeria/render-1.jpg">
+<img class="zoom" src="galeria/render-2.jpg">
+<img class="zoom" src="galeria/render-3.jpg">
+<img class="zoom" src="galeria/render-4.jpg">
+<img class="zoom" src="galeria/render-5.jpg">
+<img class="zoom" src="galeria/render-6.jpg">
+<img class="zoom" src="galeria/render-7.jpg">
+<img class="zoom" src="galeria/render-8.jpg">
+<img class="zoom" src="galeria/render-9.jpg">
+<img class="zoom" src="galeria/render-10.jpg">
 
 </div>
 
 </section>
 
-<!-- AVANCES -->
 
-<section id="avances">
-
-<h2 class="titulo">AVANCES DE OBRA</h2>
-
-<div class="galeria">
-
-<img src="AVANCES DE OBRA/avance-replanteo-mono.jpg">
-<img src="AVANCES DE OBRA/avance-excavaciones-mono.jpg">
-<img src="AVANCES DE OBRA/avance-fundaciones-mono.jpg">
-<img src="AVANCES DE OBRA/avance-mamposteria-mono.jpg">
-
-</div>
-
-</section>
-
-<!-- CONTACTO -->
 
 <section id="contacto">
 
-<h2 class="titulo">CONTACTO</h2>
+<h2>CONTACTO</h2>
 
-<div class="contacto">
+<p>DMF CONSTRUCCIONES SRL</p>
+<img src="contacto/logo-dmf.png" class="logo">
 
-<div>
+<p>INMOBILIARIA SUMA NEGOCIOS</p>
+<img src="contacto/logo-suma.png" class="logo">
 
-<img class="logo" src="CONTACTO/logo-dmf.jpg">
-
-<p>
-DMF CONSTRUCCIONES SRL<br>
-Albardón, San Juan
-</p>
-
-</div>
-
-<div>
-
-<img class="logo" src="CONTACTO/logo-suma.jpg">
-
-<p>
-SUMA NEGOCIOS<br>
-CPCISJ Nº 232
-</p>
-
-</div>
-
-</div>
-
-<a class="boton" href="https://wa.me/542646222110" target="_blank">CONTACTANOS</a>
+<a class="boton-whatsapp"
+href="https://wa.me/5492646222110">
+CONTACTANOS
+</a>
 
 </section>
 
-<!-- ZOOM -->
 
-<div class="zoom" id="zoom">
 
-<span class="cerrar" onclick="cerrarZoom()">×</span>
-<img id="imgZoom">
-
+<div id="lightbox">
+<img id="lightbox-img">
 </div>
 
-<!-- WHATSAPP -->
 
-<a class="whatsapp" href="https://wa.me/542646222110" target="_blank">💬</a>
-
-<script>
-
-document.querySelectorAll("img").forEach(img=>{
-img.onclick=()=>{
-document.getElementById("zoom").style.display="flex"
-document.getElementById("imgZoom").src=img.src
-}
-})
-
-function cerrarZoom(){
-document.getElementById("zoom").style.display="none"
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
