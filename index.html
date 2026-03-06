@@ -8,7 +8,7 @@
 
 <title>EL ZORZAL</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Antic&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,37 +18,42 @@ scroll-behavior:smooth;
 
 body{
 margin:0;
-font-family:'Forum',serif;
-color:#222;
-background:#f7f3ec;
+background:#f2e9dd;
+font-family:'Antic',sans-serif;
+color:#000;
 }
 
 /* MENU */
 
 nav{
+
 position:fixed;
 top:0;
 width:100%;
-background:#ffffffee;
-backdrop-filter:blur(8px);
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:#4a3f36;
 z-index:1000;
+
 }
 
 nav ul{
+
 display:flex;
 justify-content:center;
 gap:35px;
 list-style:none;
+padding:14px;
 margin:0;
-padding:18px;
+
 }
 
 nav a{
+
+color:white;
 text-decoration:none;
-color:#111;
+font-family:'Forum',serif;
 font-size:14px;
-letter-spacing:1.5px;
+letter-spacing:2px;
+
 }
 
 /* HERO */
@@ -56,9 +61,7 @@ letter-spacing:1.5px;
 .hero{
 
 height:95vh;
-
 background:url("render-portada.jpg") center/cover no-repeat;
-
 display:flex;
 align-items:center;
 justify-content:center;
@@ -72,14 +75,15 @@ content:"";
 position:absolute;
 width:100%;
 height:100%;
-background:rgba(30,30,30,0.65);
+background:rgba(0,0,0,0.6);
 
 }
 
 .hero h1{
 
 color:white;
-font-size:48px;
+font-family:'Forum',serif;
+font-size:52px;
 letter-spacing:6px;
 z-index:2;
 
@@ -97,40 +101,49 @@ margin:auto;
 
 h2{
 
+font-family:'Forum',serif;
 font-size:22px;
-letter-spacing:2px;
-margin-bottom:30px;
+letter-spacing:3px;
 
 }
 
 p{
 
-font-size:16px;
-line-height:1.6;
-margin-bottom:18px;
 text-align:justify;
+line-height:1.4;
 
 }
 
-/* ANIMACION */
+/* IMAGEN FULL */
 
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
-
-/* IMAGEN GRANDE */
-
-.fullimg{
+.full{
 
 width:100%;
 margin-top:40px;
+
+}
+
+/* PLANOS */
+
+.planos{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+
+}
+
+.planos img{
+
+width:100%;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.planos img:hover{
+
+transform:scale(1.03);
 
 }
 
@@ -156,86 +169,19 @@ width:100%;
 
 }
 
-/* PLANOS */
+/* CONTACTO */
 
-.planos{
+.contact{
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-
-}
-
-.planos img{
-
-width:100%;
-cursor:pointer;
+display:flex;
+gap:40px;
+flex-wrap:wrap;
 
 }
 
-/* UNIDADES */
+.contact img{
 
-.unidades{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-
-}
-
-.unidad{
-
-border:1px solid #ddd;
-padding:25px;
-background:white;
-
-}
-
-/* MAPA */
-
-iframe{
-
-width:100%;
-height:420px;
-border:none;
-
-}
-
-/* FORMULARIO */
-
-form{
-
-display:grid;
-gap:15px;
-max-width:500px;
-
-}
-
-input,textarea{
-
-padding:12px;
-border:1px solid #ccc;
-font-family:'Forum',serif;
-
-}
-
-button{
-
-padding:12px;
-border:none;
-background:#222;
-color:white;
-cursor:pointer;
-
-}
-
-/* FOOTER */
-
-footer{
-
-text-align:center;
-padding:40px;
-background:#eee;
+width:120px;
 
 }
 
@@ -248,14 +194,15 @@ bottom:25px;
 right:25px;
 background:#25D366;
 color:white;
-padding:15px 18px;
+padding:14px 18px;
 border-radius:50%;
-font-size:22px;
 text-decoration:none;
+font-size:22px;
 
 }
 
 </style>
+
 </head>
 
 
@@ -266,18 +213,12 @@ text-decoration:none;
 
 <ul>
 
-<li><a href="#proyecto">PROYECTO</a></li>
-
+<li><a href="#proyecto">EL PROYECTO</a></li>
 <li><a href="#ubicacion">UBICACIÓN</a></li>
-
 <li><a href="#conjunto">CONJUNTO</a></li>
-
 <li><a href="#prototipos">PROTOTIPOS</a></li>
-
 <li><a href="#galeria">GALERIA</a></li>
-
-<li><a href="#obra">AVANCES</a></li>
-
+<li><a href="#obra">AVANCES DE OBRA</a></li>
 <li><a href="#contacto">CONTACTO</a></li>
 
 </ul>
@@ -292,20 +233,16 @@ text-decoration:none;
 </section>
 
 
-<section id="proyecto" class="reveal">
+
+<section id="proyecto">
 
 <h2>EL PROYECTO</h2>
 
+<p>EL ZORZAL</p>
+
 <p>
 EL ZORZAL es un desarrollo residencial moderno ubicado en Santa Lucía, dentro del área metropolitana de San Juan.
-</p>
-
-<p>
-El proyecto se emplaza en una zona urbana consolidada, caracterizada por su excelente conectividad y proximidad a los principales puntos de la ciudad.
-</p>
-
-<p>
-Su estratégica localización permite un acceso rápido al área céntrica, espacios comerciales, instituciones educativas y a las principales arterias viales que estructuran la movilidad urbana.
+El proyecto se emplaza en una zona urbana consolidada, caracterizada por su excelente conectividad y proximidad a los principales puntos de la ciudad. Su estratégica localización permite un acceso rápido al área céntrica, espacios comerciales, instituciones educativas y a las principales arterias viales que estructuran la movilidad urbana.
 </p>
 
 <p>
@@ -320,23 +257,32 @@ El desarrollo está a cargo de DMF CONSTRUCCIONES SRL, una empresa familiar con 
 EL ZORZAL se presenta así como una alternativa sólida tanto para vivienda propia como para inversión, combinando una ubicación estratégica, diseño contemporáneo y un respaldo profesional que garantiza seguridad y valor a largo plazo.
 </p>
 
-<img class="fullimg" src="EL PROYECTO/render-exonometria.jpg">
+<img class="full" src="EL PROYECTO/render-exonometria.jpg">
 
 </section>
 
 
-<section id="ubicacion" class="reveal">
+
+<section id="ubicacion">
 
 <h2>UBICACIÓN</h2>
 
 <p>Hipólito Yrigoyen Este & Zorzal</p>
 
-<iframe src="https://maps.google.com/maps?q=https://maps.app.goo.gl/QPntd3Agr1XSM1eCA&output=embed"></iframe>
+<iframe
+width="100%"
+height="400"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://maps.google.com/maps?q=https://maps.app.goo.gl/QPntd3Agr1XSM1eCA&output=embed">
+</iframe>
 
 </section>
 
 
-<section id="conjunto" class="reveal">
+
+<section id="conjunto">
 
 <h2>CONJUNTO</h2>
 
@@ -368,10 +314,40 @@ El diseño contempla accesos diferenciados para peatones y vehículos, incorpora
 De esta manera, EL ZORZAL propone una síntesis equilibrada entre diseño, funcionalidad y calidad constructiva, dando lugar a un conjunto residencial contemporáneo pensado para responder a las necesidades actuales de vivienda e inversión.
 </p>
 
+<div class="planos">
+
+<img src="CONJUNTO/planta-baja.jpg">
+<img src="CONJUNTO/planta-alta.jpg">
+<img src="CONJUNTO/fachada-principal.jpg">
+
+</div>
+
 </section>
 
 
-<section id="galeria" class="reveal">
+
+<section id="prototipos">
+
+<h2>PROTOTIPOS</h2>
+
+<h3>UNA HABITACION</h3>
+
+<img class="full" src="PROTOTIPOS/habitacion-axo.jpg">
+
+<p>• SUPERFICIE 38M2</p>
+<p>• ESPACIOS: HABITACION,BAÑO,COCINA-COMEDOR INTEGRADO- JARDIN EN PLANTA BAJA Y BALCON PRIMER NIVEL.</p>
+<p>• TERMINACIONES: PISO PORCELANATO RECTIFICADO DE PRIMERA CALIDA, CARPINTERIA DE ALUMINIO, MUEBLES DE COCINA INCLUIDO CON POSIBILIDAD DE ELECCION DE DISEÑOS, ANAFE ELECRICO, GRIFERIA MONOCOMANDE FERRUM Y ARTEFACTOS DANITARIOS LINEA BARI DE FERRUM.</p>
+
+
+<h3>MONOAMBIENTE</h3>
+
+<img class="full" src="PROTOTIPOS/monoambiente-axo.jpg">
+
+</section>
+
+
+
+<section id="galeria">
 
 <h2>GALERIA</h2>
 
@@ -392,70 +368,58 @@ De esta manera, EL ZORZAL propone una síntesis equilibrada entre diseño, funci
 </section>
 
 
-<section id="obra" class="reveal">
+
+<section id="obra">
 
 <h2>AVANCES DE OBRA</h2>
 
-<p>Seguimiento de avances de construcción de unidades.</p>
+<p>Galería monoambiente y una habitación.</p>
 
 </section>
 
 
-<section id="contacto" class="reveal">
+
+<section id="contacto">
 
 <h2>CONTACTO</h2>
 
-<p>DMF CONSTRUCCIONES SRL</p>
+<div class="contact">
 
-<form>
+<div>
 
-<input type="text" placeholder="Nombre">
+<p>DMF CONSTRUCCIONES SRL.</p>
 
-<input type="email" placeholder="Email">
+<p>Albardón, San Juan, Argentina</p>
 
-<textarea placeholder="Consulta"></textarea>
+<img src="CONTACTO/logo-dmf.png">
 
-<button>Enviar</button>
+</div>
 
-</form>
+<div>
+
+<p>INMOBILIARIA- SUMA NEGOCIOS.</p>
+
+<p>Dirección: C. San Luis Oeste 28, J5400 ANB, San Juan, Argentina</p>
+
+<p>INMOBILIARIA HABILITADA CPCISJ Nº 232</p>
+
+<p>CELULAR 2646222110</p>
+
+<img src="CONTACTO/logo-suma.png">
+
+</div>
+
+</div>
 
 </section>
 
 
-<footer>
 
-<p>EL ZORZAL — Desarrollo residencial</p>
+<a class="whatsapp" href="https://wa.me/5492646222110" target="_blank">💬</a>
 
-</footer>
-
-
-<a class="whatsapp" href="https://wa.me/5492646222110" target="_blank">
-
-💬
-
-</a>
 
 
 <script>
-
-const reveals=document.querySelectorAll(".reveal");
-
-window.addEventListener("scroll",()=>{
-
-reveals.forEach(el=>{
-
-const top=el.getBoundingClientRect().top;
-
-if(top<window.innerHeight-100){
-
-el.classList.add("active");
-
-}
-
-});
-
-});
-
 
 let index=0;
 
@@ -475,5 +439,7 @@ setInterval(slider,4000);
 
 </script>
 
+
 </body>
+
 </html>
