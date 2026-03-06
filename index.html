@@ -2,166 +2,146 @@
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>EL ZORZAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Zorzal</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-
 </head>
-
 
 <body>
 
-
-<header>
+<header class="hero">
 
 <nav class="menu">
 
-<a href="#proyecto">EL PROYECTO</a>
-<a href="#ubicacion">UBICACIÓN</a>
-<a href="#conjunto">CONJUNTO</a>
-<a href="#prototipos">PROTOTIPOS</a>
-<a href="#galeria">GALERÍA</a>
-<a href="#avances">AVANCES DE OBRA</a>
-<a href="#contacto">CONTACTO</a>
+<div class="logo">EL ZORZAL</div>
+
+<ul>
+<li><a href="#proyecto">Proyecto</a></li>
+<li><a href="#conjunto">Conjunto</a></li>
+<li><a href="#ubicacion">Ubicación</a></li>
+<li><a href="#avance">Avance de obra</a></li>
+</ul>
 
 </nav>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-text">
+<h1>EL ZORZAL</h1>
+<p>Desarrollo residencial moderno</p>
+</div>
 
 </header>
 
 
-<section class="portada">
+<section id="proyecto" class="section">
 
-<img src="galeria/render-1.jpg">
+<h2>Proyecto</h2>
 
-<div class="overlay"></div>
-
-<h1>EL ZORZAL</h1>
-
-</section>
-
-
-
-<section id="proyecto">
-
-<h2>EL PROYECTO</h2>
-
-<p class="texto">
-
-EL ZORZAL es un desarrollo residencial moderno ubicado en Santa Lucía, dentro del área metropolitana de San Juan.
-
-El proyecto se emplaza en una zona urbana consolidada, caracterizada por su excelente conectividad y proximidad a los principales puntos de la ciudad. Su estratégica localización permite un acceso rápido al área céntrica, espacios comerciales, instituciones educativas y a las principales arterias viales que estructuran la movilidad urbana.
-
-Con una estética cálida y contemporánea, el proyecto ofrece unidades en dos tipologías -monoambiente y un dormitorio diseñadas para maximizar funcionalidad, confort y luminosidad.
-
-El desarrollo está a cargo de DMF CONSTRUCCIONES SRL, una empresa familiar con más de 40 años de trayectoria en el sector de la construcción, reconocida por su compromiso con la calidad constructiva y la correcta planificación de cada proyecto.
-
-EL ZORZAL se presenta así como una alternativa sólida tanto para vivienda propia como para inversión, combinando una ubicación estratégica, diseño contemporáneo y un respaldo profesional que garantiza seguridad y valor a largo plazo.
-
+<p>
+Proyecto de desarrollo residencial moderno localizado en Santa Lucía, San Juan, Argentina.
+Con una estética cálida y contemporánea, el conjunto propone unidades funcionales con
+espacios luminosos, ventilación cruzada y una relación directa con el espacio exterior.
 </p>
 
-<img class="fullimg zoom" src="el-proyecto/render-exonometria.jpg">
+<div class="carousel">
+
+<button class="prev">&#10094;</button>
+
+<div class="carousel-track">
+
+<img src="imagenes/proyecto1.jpg">
+<img src="imagenes/proyecto2.jpg">
+<img src="imagenes/proyecto3.jpg">
+
+</div>
+
+<button class="next">&#10095;</button>
+
+</div>
 
 </section>
 
 
+<section id="conjunto" class="section">
 
-<section id="ubicacion">
+<h2>Conjunto</h2>
 
-<h2>UBICACIÓN</h2>
-
-<p>Hipólito Yrigoyen Este & Zorzal</p>
-
-<a class="boton" href="https://maps.app.goo.gl/QPntd3Agr1XSM1eCA" target="_blank">
-VER EN GOOGLE MAPS
-</a>
-
-<img class="fullimg zoom" src="ubicacion/mapa-1.jpg">
-
-</section>
-
-
-
-<section id="conjunto">
-
-<h2>CONJUNTO</h2>
-
-<p class="texto">
-
-El proyecto se implanta sobre un terreno de configuración triangular, cuya particular geometría dio origen a una propuesta arquitectónica cuidadosamente estudiada. A partir de esta condición, se priorizó la orientación de las unidades residenciales con el objetivo de favorecer la ventilación cruzada y optimizar el ingreso de iluminación natural en los espacios interiores.
-
-Con una arquitectura de líneas contemporáneas y una estética cálida, EL ZORZAL se concibe como un conjunto residencial compuesto por 18 unidades habitacionales, organizadas en dos tipologías: monoambientes y departamentos de un dormitorio.
-
-Cada vivienda fue proyectada atendiendo especialmente a la eficiencia espacial, el confort cotidiano y la calidad ambiental.
-
+<p>
+El proyecto se implanta sobre un terreno de configuración triangular,
+cuya particular geometría dio origen a una propuesta arquitectónica
+cuidadosamente estudiada. A partir de esta condición se priorizó la
+orientación de las unidades residenciales con el objetivo de favorecer
+la ventilación cruzada y optimizar el ingreso de luz natural.
 </p>
 
-<div class="galeria">
+<div class="grid-galeria">
 
-<img class="zoom" src="conjunto/planta-baja.jpg">
-<img class="zoom" src="conjunto/planta-alta.jpg">
-<img class="zoom" src="conjunto/fachada-principal.jpg">
-
-</div>
-
-</section>
-
-
-
-<section id="galeria">
-
-<h2>GALERÍA</h2>
-
-<div class="galeria">
-
-<img class="zoom" src="galeria/render-1.jpg">
-<img class="zoom" src="galeria/render-2.jpg">
-<img class="zoom" src="galeria/render-3.jpg">
-<img class="zoom" src="galeria/render-4.jpg">
-<img class="zoom" src="galeria/render-5.jpg">
-<img class="zoom" src="galeria/render-6.jpg">
-<img class="zoom" src="galeria/render-7.jpg">
-<img class="zoom" src="galeria/render-8.jpg">
-<img class="zoom" src="galeria/render-9.jpg">
-<img class="zoom" src="galeria/render-10.jpg">
+<img src="imagenes/planta-baja.jpg">
+<img src="imagenes/planta-alta.jpg">
+<img src="imagenes/fachada.jpg">
 
 </div>
 
 </section>
 
 
+<section id="ubicacion" class="section">
 
-<section id="contacto">
+<h2>Ubicación</h2>
 
-<h2>CONTACTO</h2>
+<iframe
+src="https://www.google.com/maps?q=-31.5433,-68.5183&output=embed"
+width="100%"
+height="400"
+style="border:0;"
+loading="lazy">
+</iframe>
 
-<p>DMF CONSTRUCCIONES SRL</p>
-<p>Albardón,San Juan.Argentina.</p>
-<img src="contacto/logo-dmf.png" class="logo">
+</section>
 
-<p>INMOBILIARIA SUMA NEGOCIOS</p>
-<p>Calle San Luis Oeste 28, J5400 ANB, San Juan, Argentina</p>
-<img src="contacto/logo-suma.png" class="logo">
 
-<a class="whatsapp" href="https://wa.me/5492646222110" target="_blank">
-W
-</a>>
-CONTACTANOS
+<section id="avance" class="avance-container">
+
+<h2>Avance de obra</h2>
+
+<div class="avance-categoria">
+
+<h3>Movimiento de suelo</h3>
+
+<div class="avance-galeria">
+<img src="avance/suelo1.jpg">
+<img src="avance/suelo2.jpg">
+</div>
+
+</div>
+
+
+<div class="avance-categoria">
+
+<h3>Cimentación</h3>
+
+<div class="avance-galeria">
+<img src="avance/cimentacion1.jpg">
+<img src="avance/cimentacion2.jpg">
+</div>
+
+</div>
+
+</section>
+
+
+<a href="https://wa.me/5492640000000" class="whatsapp">
+WhatsApp
 </a>
 
-</section>
 
-
-
-<div id="lightbox">
-<img id="lightbox-img">
+<div id="zoomModal" class="modal">
+<span class="cerrar">&times;</span>
+<img class="modal-content" id="zoomImg">
 </div>
-
 
 <script src="script.js"></script>
 
